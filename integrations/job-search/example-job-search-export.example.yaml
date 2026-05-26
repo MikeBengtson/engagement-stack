@@ -23,10 +23,30 @@ resume_recommendations:
   - foreground evidence-backed AI engineering projects
 resume_shader_recommendations:
   - name: AI Platform Engineer
-    target_role: AI Platform Engineer
+    slug: ai-platform-engineer
+    description: Tailor the canonical resume toward hands-on AI platform and agent workflow engineering roles.
+    rationale: The strategy report identified agent workflow design and developer tooling as the strongest evidence-backed bridge into AI infrastructure teams.
+    target:
+      role: AI Platform Engineer
+      industry: AI infrastructure
+      seniority: senior/staff
+      platform: ats
     emphasize:
       - agent workflow design
       - developer tooling projects
+    deemphasize:
+      - unrelated legacy platform maintenance
+    preferred_terms:
+      - agent workflows
+      - developer tooling
+      - AI infrastructure
+    avoid_terms:
+      - AI guru
+    evidence_gaps:
+      - add public links for the strongest AI engineering projects
+    source_report_sections:
+      - Skills, Experience, and Interests Alignment
+      - Application Materials
 linkedin_recommendations:
   - update headline to include target role language
 next_steps:
