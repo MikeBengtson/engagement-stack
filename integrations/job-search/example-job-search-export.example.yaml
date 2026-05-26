@@ -1,0 +1,36 @@
+schema: job_search_export/v1
+summary: Fictional job-search strategy export for Engagement Stack ingestion.
+target_roles:
+  - Staff Software Engineer
+  - AI Platform Engineer
+target_industries:
+  - developer tools
+  - AI infrastructure
+industry_classifications:
+  - name: Software Publishers
+    taxonomy: NAICS
+    code: "513210"
+transferable_skills:
+  - agent workflow design
+  - full-stack product engineering
+employment_type_recommendations:
+  - full_time
+  - advisory_fractional
+geographic_preferences:
+  remote: preferred
+  hybrid: conditional
+resume_recommendations:
+  - foreground evidence-backed AI engineering projects
+resume_shader_recommendations:
+  - name: AI Platform Engineer
+    target_role: AI Platform Engineer
+    emphasize:
+      - agent workflow design
+      - developer tooling projects
+linkedin_recommendations:
+  - update headline to include target role language
+next_steps:
+  - build a target company list
+canonical_fact_updates_requiring_review: []
+evidence_gaps:
+  - add public links for the strongest AI engineering projects
