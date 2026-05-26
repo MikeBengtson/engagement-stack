@@ -16,6 +16,15 @@ transferable_skills:
 employment_type_recommendations:
   - full_time
   - advisory_fractional
+compensation_preferences:
+  annual_salary_min: null
+  annual_salary_target: null
+  annual_salary_max: null
+  hourly_rate_min: 175
+  hourly_rate_target: 225
+  hourly_rate_max: 300
+  hourly_rate_basis: 1099 or corp-to-corp advisory/fractional work, before platform fees or travel premiums
+  notes: Fictional example values. Real values should usually live in a private overlay.
 geographic_preferences:
   remote: preferred
   hybrid: conditional
