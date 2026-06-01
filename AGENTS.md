@@ -67,6 +67,10 @@ Use `private.example/` as the example pattern. Real private overlays should live
 
 Use `submissions/linkedin/`, `submissions/ats-generic/`, and `submissions/indeed/`. Generate copy/paste-ready text and structured YAML. Do not automate platform actions unless the user explicitly asks and the platform supports compliant access.
 
+### Generate The Human-Readable Landing Page
+
+Use `prompts/generate-landing-page.md` with the template at `submissions/web/landing-page.template.html` to produce a polished, self-contained `docs/index.html` — the optional designed human surface (hero, signature-stat band, experience timeline, skills, open-source proof, availability) with prominent **Résumé** and **🤖 Agents** (→ `AGENTS.md`) call-to-action links. Fill the `{{PLACEHOLDER}}` tokens from `profile/`, `cv/`, `evidence/`, and `engagements/`; keep it public-safe (no compensation or private-overlay data). Deploy via GitHub Pages (`/docs` on a public repo, or a `<user>.github.io` user-site). See `submissions/web/README.md`.
+
 ### Use GitHub
 
 Use `docs/agent-github-setup.md` for `gh` CLI setup, Actions, releases, and optional Pages. Do not publish generated artifacts publicly unless the user explicitly approves.

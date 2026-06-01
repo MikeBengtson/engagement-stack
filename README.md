@@ -38,6 +38,7 @@ It is not just a resume template. It is a framework for maintaining a complete p
 - [📦 Repository Layout](#-repository-layout)
 - [🧪 Examples](#-examples)
 - [📄 Resume And Submission Outputs](#-resume-and-submission-outputs)
+- [🌐 Human-Readable Landing Page](#-human-readable-landing-page)
 - [🎛️ Resume Shaders](#%EF%B8%8F-resume-shaders)
 - [🖼️ Brand Assets](#%EF%B8%8F-brand-assets)
 - [🔗 Built With Engagement Stack](#-built-with-engagement-stack)
@@ -142,6 +143,18 @@ No local setup required: the **Render Resumes** GitHub Actions workflow installs
 **Ground-truth first:** if you already have polished resumes, Engagement Stack uses them as-is — drop them in `resumes/short.md` / `resumes/long.md`, preserve originals verbatim in [`resumes/originals/`](resumes/originals/), and skip resume generation unless you ask to refine. Shaders still layer on top for role/industry specifics.
 
 Other submission materials — LinkedIn profile text, generic ATS field packs, and engagement-request replies — are generated from `submissions/` and `cv/`.
+
+## 🌐 Human-Readable Landing Page
+
+The GitHub-rendered README is the default human surface. For a higher-polish option, you can also **generate a designed landing page** — a self-contained, navy-themed `docs/index.html` that fronts the same canonical facts: hero, signature-stat band, experience timeline, skills, open-source proof, and availability, with prominent **Résumé** and **🤖 Agents** call-to-action links. The Agents button points at [`AGENTS.md`](AGENTS.md), so a visitor's agent gets a one-click door to your machine-readable surface.
+
+- **Prompt:** [`prompts/generate-landing-page.md`](prompts/generate-landing-page.md)
+- **Template:** [`submissions/web/landing-page.template.html`](submissions/web/landing-page.template.html) — the proven page, genericized to `{{PLACEHOLDER}}` tokens
+- **Adapter:** [`submissions/web/README.md`](submissions/web/README.md)
+
+Run the prompt against a populated stack: it fills the template from `profile/`, `cv/`, `evidence/`, and `engagements/` (public-safe — never compensation or private-overlay data), writes `docs/index.html` + `docs/.nojekyll`, and deploys via GitHub Pages (`/docs` on a public repo, or a `<username>.github.io` user-site). Live reference instance: **https://mikebengtson.github.io/**.
+
+[⬆ back to top](#top)
 
 ## 🎛️ Resume Shaders
 
